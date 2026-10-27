@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Summarizer Widget</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="widget">
+    <header class="widget-header">
+      <h1>AI Summarizer</h1>
+      <p>Turn long text into clear, concise summaries.</p>
+    </header>
+
+    <label for="inputText">Text to summarize</label>
+
+    <textarea
+      id="inputText"
+      placeholder="Paste an article, notes, or any text here..."
+      rows="10"
+      maxlength="30000"
+    ></textarea>
+
+    <div class="input-info">
+      <span id="characterCount">0 / 30000 characters</span>
+    </div>
+
+    <button id="summarizeBtn" type="button">
+      Summarize Text
+    </button>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <section id="summarySection" hidden>
+      <h2>Summary</h2>
+      <div id="summaryResult"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

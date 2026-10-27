@@ -1,0 +1,18 @@
+
+{
+  "manifest_version": 3,
+  "name": "Reusable AI Summarizer",
+  "version": "1.0.0",
+  "description": "Summarize webpages using a shared AI backend.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_title": "AI Summarizer",
+    "default_popup": "popup.html"
+  }
+}
